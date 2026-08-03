@@ -21,6 +21,10 @@ class Solution {
             fast = fast.next.next;
         }
 
+        if (fast != null) {
+            slow = slow.next;
+        }
+
         ListNode secHalf = reverse(slow);
 
         ListNode p1 = head;
